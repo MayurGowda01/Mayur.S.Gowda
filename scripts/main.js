@@ -98,6 +98,18 @@ function toggleAbstract(element) {
   }
 }
 
+// Hide top-nav on scroll
+const topNav = document.querySelector('.top-nav');
+
+window.addEventListener('scroll', () => {
+  const scrollPosition = window.scrollY;
+
+  if (scrollPosition > window.innerHeight * 0.6) {
+    topNav.classList.add('hidden');
+  } else {
+    topNav.classList.remove('hidden');
+  }
+});
 
 
 
