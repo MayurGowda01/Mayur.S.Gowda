@@ -294,3 +294,34 @@ html {
   flex-shrink: 0;
 }
 
+/* Top Navigation Bar */
+.top-nav {
+  position: fixed;
+  top: 20px;
+  right: 40px;
+  z-index: 999;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.top-nav.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.top-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.top-nav li a {
+  color: #fec096;
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: color 0.3s ease;
+}
+
+.top-nav li a:hover {
+  color: #fff;
+}
